@@ -10,17 +10,40 @@
             margin: 0;
             padding: 0;
             background-color: #f8f8f8;
+            font-family: Arial, sans-serif;
+        }
+        h2 {
+            padding: 15px;
+            background: linear-gradient(to right, #ff9966, #ff5e62);
+            color: white;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        .image-container {
+            margin: 20px auto;
+            width: 90%;
+            max-width: 800px;
+            border: 10px solid #ff5e62; /* Attractive red-orange border */
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
         }
         img {
-            width: 100%; /* Makes images full-width */
-            height: auto; /* Maintains aspect ratio */
+            width: 100%;
+            height: auto;
             display: block;
         }
     </style>
 </head>
 <body>
     <h2>My Photos</h2>
-    <img src="https://portal.saralbankingsewa.com/storage/emailcampaignimages/2.jpg_1743059851" alt="Image 1">
-    <img src="https://portal.saralbankingsewa.com/storage/emailcampaignimages/1.jpg_1743059801" alt="Image 2">
+    
+    <div class="image-container">
+        <img src="https://portal.saralbankingsewa.com/storage/emailcampaignimages/1.jpg_1743059801" alt="Image 1">
+    </div>
+    
+    <div class="image-container">
+        <img src="https://portal.saralbankingsewa.com/storage/emailcampaignimages/2.jpg_1743059851" alt="Image 2">
+    </div>
 </body>
 </html>
