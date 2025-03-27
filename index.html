@@ -12,15 +12,26 @@
             background-color: #3E2C41; /* Dark brown background */
             font-family: Arial, sans-serif;
             color: #f5f5f5; /* Light text color for contrast */
-      .logo {
-    width: 320px;  /* Adjust width */
+     .logo {
+    width: 220px;  /* Adjust width for the logo */
     height: auto;  /* Maintain aspect ratio */
     margin: 0 auto 30px auto; /* Center the logo horizontally */
-    display: block; /* Center image */
+    display: block; /* Make it a block element to allow centering */
     position: relative;
     transition: all 0.3s ease-in-out;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Add shadow for depth */
+    transform-style: preserve-3d; /* Ensures 3D effect is applied */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 
+                0 5px 5px rgba(0, 0, 0, 0.1); /* Stronger shadows for depth */
 }
+
+/* 3D Hover Effect */
+.logo:hover {
+    transform: translateY(-15px) rotateX(15deg) rotateY(10deg) scale(1.05); /* Increased movement for better 3D effect */
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4), /* Deeper shadow on hover */
+                0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
         .image-container {
             margin: 30px auto;
             width: 80%; /* Set image size */
