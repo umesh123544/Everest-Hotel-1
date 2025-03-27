@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Everest Hotel</title>
+    <title>My Photos</title>
     <style>
         body {
             text-align: center;
@@ -37,6 +37,20 @@
             display: block;
             border-radius: 8px;
         }
+        .download-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #5C3D34; /* Dark brown button */
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-top: 10px;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .download-button:hover {
+            background-color: #2D1E1B;
+        }
     </style>
 </head>
 <body>
@@ -44,10 +58,12 @@
 
     <div class="image-container">
         <img src="https://portal.saralbankingsewa.com/storage/emailcampaignimages/1.jpg_1743059801" alt="Image 1">
+        <a href="images/image1.jpg" download="image1.jpg" class="download-button">Download Image 1</a>
     </div>
 
     <div class="image-container">
-        <img src="https://portal.saralbankingsewa.com/storage/emailcampaignimages/2.jpg_1743059851" alt="Image 2">
+        <img src="images/image2.jpg" alt="Image 2">
+        <a href="https://portal.saralbankingsewa.com/storage/emailcampaignimages/2.jpg_1743059851" alt="Image 2" class="download-button">Download Image 2</a>
     </div>
 </body>
 </html>
